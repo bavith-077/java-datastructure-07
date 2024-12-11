@@ -1,4 +1,4 @@
-//program to perform binary search:
+//program to perform binary search: with big O notation identification
 import java.util.Scanner;
 public class binarysearch{
     public static void main(String args[]){
@@ -24,9 +24,12 @@ public class binarysearch{
     public static int binarysearchh(int[] num,int target){
         int left = 0;
         int right = num.length-1;
+        int steps = 0;
         while(left<=right){
+            steps++;
             int mid = (left+right)/2;
             if(num[mid]==target){
+                System.out.println("the steps that taken in the binary search: "+steps);
                 return mid;
             }
             else if(num[mid]<target){
@@ -37,6 +40,7 @@ public class binarysearch{
             }
 
         }
+        System.out.println("the steps that taken to complete binary search is :"+steps);
         return -1;
     }
     
@@ -53,4 +57,5 @@ Enter the 5 number :
 32
 enter the target that need to be find in the array:
 12
-the entered target in the index of :0 */
+the entered target in the index of :0 
+since it have between n and constant so it will be denoted as log(n)*/
