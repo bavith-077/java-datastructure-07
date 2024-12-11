@@ -33,10 +33,10 @@ public class binarysearch{
                 return mid;
             }
             else if(num[mid]<target){
-                left = mid+1;    //instead of doing this we can do return binarysearch(num,target,left=+1,right)
+                left = mid+1;    //instead of doing this we can do return binarysearch(num,target,left=mid+1,right)
             }
             else{
-                right=mid-1;      //instead of doing this we can do return binarysearch(num,target,left,right=-1)
+                right=mid-1;      //instead of doing this we can do return binarysearch(num,target,left,right=mid-1)
             }
 
         }
