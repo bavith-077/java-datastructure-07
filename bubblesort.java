@@ -13,7 +13,7 @@ public class bubblesort{
         int temp =0;
         System.out.println("the array before sorting:");
         for(int nums : num){
-            System.out.println(nums+" ");
+            System.out.print(nums+" ");
         }
         for(int i=0;i<size;i++){
             for(int j=0;j<size-i-1;j++){
@@ -27,7 +27,20 @@ public class bubblesort{
         System.out.println();
         System.out.println("after sorting:");
         for(int nums : num){
-            System.out.println(nums+" ");
+            System.out.print(nums+" ");
         }
     }
 }
+/*output
+Enter the array size: 
+5
+Enter the 5 number :
+8
+3
+1
+9
+4
+the array before sorting:
+8 3 1 9 4
+after sorting:
+1 3 4 8 9 */
