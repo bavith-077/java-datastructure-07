@@ -22,11 +22,15 @@ public class linearsearch{
 
     }
     public static int linearsearchh(int[] num,int target){
+        int steps = 0;
         for(int i =0;i<num.length;i++){
+            steps++;
             if(num[i]==target){
+                System.out.println("the steps that taken for the linear search:"+steps);
                 return i;
             }
         }
+        System.out.println("the steps that taken for the linear search:"+steps);
         return -1;
     }
     
