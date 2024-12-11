@@ -29,14 +29,14 @@ public class binarysearch{
             steps++;
             int mid = (left+right)/2;
             if(num[mid]==target){
-                System.out.println("the steps that taken in the binary search: "+steps);
+                System.out.println("the steps that taken in the binary search: "+steps);  //when it have to be in a recr function 
                 return mid;
             }
             else if(num[mid]<target){
-                left = mid+1;
+                left = mid+1;    //instead of doing this we can do return binarysearch(num,target,left=+1,right)
             }
             else{
-                right=mid-1;
+                right=mid-1;      //instead of doing this we can do return binarysearch(num,target,left,right=-1)
             }
 
         }
